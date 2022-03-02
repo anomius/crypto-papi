@@ -10,8 +10,8 @@ const theme = extendTheme({
   },
 });
 
-const moralisAppId = "8hHLoUEFHl5LhvPxPm4e6h5GbT9YyvJaDVlViMxW";
-const moralisServerURL = "https://ero1eb03iojj.usemoralis.com:2053/server";
+const moralisAppId = "b9yHTtEcO8RZVxROHEVAfdslz0yqIYSblsJIwAwW";
+const moralisServerURL = "https://h9w2sjiy2ovk.usemoralis.com:2053/server";
 
 ReactDOM.render(
   <React.StrictMode>

@@ -35,7 +35,7 @@ function App() {
   async function authWalletConnect() {
     const user = authenticate({
       provider: "walletconnect",
-      chainId: 137,
+      chainId: 56,
       // mobileLinks: [
       //   "metamask",
       //   "trust",
@@ -80,8 +80,17 @@ function App() {
           <Button
             colorScheme="green"
             size="lg"
-            onClick={() => authenticate({ signingMessage: "Hello youtube" })}>
+            onClick={() => authenticate({ signingMessage: "Hell" })}>
             Sign in using Metamask
+          </Button>
+        </Center>
+        <br />
+        <Center>
+          <Button
+            colorScheme="green"
+            size="lg"
+            onClick={() => authenticate({type: "sol"})}>
+            Sign in using Phantom
           </Button>
         </Center>
         <br />
@@ -91,6 +100,15 @@ function App() {
             size="lg"
             onClick={() => authWalletConnect()}>
             Sign in using Wallet Connect
+          </Button>
+        </Center>
+        <br />
+        <Center>
+          <Button
+            colorScheme="green"
+            size="lg"
+            onClick={() => Moralis.Plugins.fiat.buy()}>
+            Get Crypto
           </Button>
         </Center>
         <br />
